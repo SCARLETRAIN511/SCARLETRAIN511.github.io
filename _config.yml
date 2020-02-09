@@ -3,7 +3,7 @@ title: 以前觉得自己的贪逼 现在发现自己是懒狗
 SEOTitle: JiaxuanTang's Blog
 header-img: img/post-bg-desk.jpg
 email: Jiaxuan.tang18@imperial.ac.uk
-description: 如果没有终点，那不知身在何处又何妨呢
+description: Blog
 keyword: "Matlab, Aeronautics, Engineering, Maths, Structure, Python, Java, Computing"
 url: "http://SCARLETRAIN511.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -56,28 +56,26 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+disqus_username: jiaxuantang
 
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  clientID: 2a7fd7941703c260e469                            #生成的clientID
+  clientSecret: 55119b08a9ed350fadae565e364f1bc42517eb94    #生成的clientSecret
+  repo: scarletrain511.github.io    #仓库名称
+  owner: SCARLETRAIN511    #github用户名
+  admin: SCARLETRAIN511
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
 
 # Analytics settings
-# Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-158034997-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto          # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
