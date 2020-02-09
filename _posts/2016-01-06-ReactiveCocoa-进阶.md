@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      几种对积分的估算一级代码
+title:      几种对积分的估算以及代码
 subtitle:   使用matlab进行数值分析
 date:       2020-02-09
 author:     JiaxuanTang
