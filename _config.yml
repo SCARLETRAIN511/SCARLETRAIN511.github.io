@@ -1,9 +1,9 @@
 # Site settings
-title: 以前觉得自己的贪逼 现在发现自己是懒狗
+title: TJX's BLOG
 SEOTitle: JiaxuanTang's Blog
 header-img: img/post-bg-desk.jpg
 email: Jiaxuan.tang18@imperial.ac.uk
-description: Blog
+description: Here is Jiaxuan Tang's Blog
 keyword: "Matlab, Aeronautics, Engineering, Maths, Structure, Python, Java, Computing"
 url: "http://SCARLETRAIN511.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
