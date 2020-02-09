@@ -31,9 +31,6 @@ tags:
 - **Simpson rule**
 
 #### 代码
-'''matlab
-disp('Hello world');
-'''
 
 
  ```matlab
