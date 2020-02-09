@@ -1,2 +1,4 @@
 # SCARLETRAIN511.github.io
-#### forked from qiubaiying.github.io to create the personal blog.
+#### Forked from qiubaiying.github.io to create the personal blog.
+
+*Edit by Jiaxuan Tang*
