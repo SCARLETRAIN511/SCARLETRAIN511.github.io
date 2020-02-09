@@ -53,7 +53,6 @@ IntSinSim = zeros(4,1);
 IntAbsSinSim = zeros(4,1);
 IntSin2Sim = zeros(4,1);
 
-
 %mid-point rule;
 for num = 1:4
     h1(num) = 3*pi/n(num);
@@ -102,7 +101,6 @@ for num = 1:4
     IntSinSim(num) = h1(num)/3*IntSinSim(num);
     IntAbsSinSim(num) = h1(num)/3*IntAbsSinSim(num);
     IntSin2Sim(num) = h1(num)/3*IntSin2Sim(num);
-
 end
 
-'''
+ ```
