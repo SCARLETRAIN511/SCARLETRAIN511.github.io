@@ -121,9 +121,26 @@ header-img: "img/Personal_pic.jpg"
 {% endif %}
 <!-- Gitalk end -->
 
+<!--gitment-->
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '页面 ID', // 可选。默认为 location.href
+  owner: 'SCARLETRAIN511',
+  repo: 'SCARLETRAIN511.github.io',
+  oauth: {
+    client_id: '17ca3bcc74be1d618490',
+    client_secret: '7b9ec0dd3c134788e2bf4b841b580c6ab0958213',
+  },
+})
+gitment.render('container')
+</script>
+
+
  <!-- disqus 评论框 start  -->
 {% if site.disqus.enable %}
-
 <div class="comment">
     <div id="disqus_thread" class="disqus-thread">
     </div>
