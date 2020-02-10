@@ -55,6 +55,8 @@ kramdown:
 # 评论系统
 #Disqus（https://disqus.com/）
 disqus_username: jiaxuantang
+layout: default
+comments: true
 
 # Gitalk
 gitalk:
