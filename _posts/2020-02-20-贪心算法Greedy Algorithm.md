@@ -12,7 +12,7 @@ tags:
     - 学习笔记
 ---
 
-# This part is talking about greedy algorithms
+# This post is talking about greedy algorithms
 
 #### Notes from course Data Structure and algorithms from coursera
 ----------
