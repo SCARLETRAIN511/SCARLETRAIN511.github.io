@@ -17,14 +17,11 @@ tags:
 
 #### Notes from course Data Structure and algorithms from coursera
 
-<br>
-
-分治法是把问题分成最小的规模，逐个解决，再合并。最典型的例子是二分搜索法。
-
-#### 代码
+##### 这周的算法思想是divide and conquer(分治法)。分治法是把问题分成最小的规模，逐个解决，再合并。二分搜索，归并排序与快速排序都是比较经典的例子。
 
 <br>
 
+#### 二分搜索 Binary Search
 
 **Binary search**
 ```python
@@ -43,7 +40,8 @@ def binarySearch(A,low,high,key):
 ```
 <br>
 
-普通的搜索算法
+#### 普通的搜索算法 linear search
+
 **linear Search**
 ```python
 ##linear search
@@ -79,9 +77,18 @@ T(n)=aT([n/b])+O(n^d)
 
 <br>
 
-#### 排序中经常会用到divide and conquer的思想。
+### 排序中经常会用到divide and conquer的思想。
 
-选择排序是嘴简单的排序算法，类似的还有插入排序与冒泡排序，时间复杂度为O(n^2)
+- 选择排序
+- 归并排序
+- 计数排序
+- 快速排序
+
+<br>
+
+#### 选择排序 Selection sorting
+
+> 选择排序是嘴简单的排序算法，类似的还有插入排序与冒泡排序，时间复杂度为O(n^2)
 
 **选择排序代码的两种方法**
 
@@ -108,9 +115,11 @@ def selectionSorting2(a):
 
 <br>
 
-归并排序是一种效率较高的算法，思想是把一个list分为极小的部分，各个排序之后merge还原成sorted list. 时间复杂的为O(nlog(n))
+#### 归并排序 Merge Sort
 
-**Merge Sorting 归并排序**
+> 归并排序是一种效率较高的算法，思想是把一个list分为极小的部分，各个排序之后merge还原成sorted list. 时间复杂的为O(nlog(n))
+
+**Merge Sorting 归并排序 代码**
 
 ```python
 #Divide the problem
@@ -143,20 +152,28 @@ def Merge(B,C):
 <br>
 
 
+
+#### None comparison-based algorithm 
+
 > 以上的几种算法均为comparsion-based algorithms, 需要通过对比数来进行排序。有一种算法叫Count Sort 不需要进行对比，代码如下
 
 **count sorting**
 
 ```python
 #non-comparison based sorting algorithms
+
 def countSort(A):
     k = max(A)
     b = [0 for i in range(len(A))]
     c = [0 for i in range(k+1)]
+
     #将A中的元素放入c中
+
     for j in A:
         c[j] += 1
+
     #c中，index代表A元素的大小，每个值代表在A中出现的次数
+
     for i in range(1,len(c)):
         c[i] = c[i] + c[i-1]
     for j in A:
@@ -167,9 +184,9 @@ def countSort(A):
 
 <br>
 
-#### 最后是快速排序*quick sort*, 是一种效率很高的排序方法，不需要占用额外内存，average running time = O(nlog(n)), 最差情况为O(n^2)
+#### 快速排序 Quick Sort
 
-> quick sorting 也是一种 comparsion-base algorithms 
+>最后是快速排序*quick sort*, 是一种效率很高的排序方法，不需要占用额外内存，average running time = O(nlog(n)), 最差情况为O(n^2). quick sorting 也是一种 comparsion-base algorithms 
 
 最简单的代码实现如下
 
