@@ -17,6 +17,8 @@ tags:
 
 #### Notes from course Data Structure and algorithms from coursera
 
+<br>
+
 分治法是把问题分成最小的规模，逐个解决，再合并。最典型的例子是二分搜索法。
 
 ***代码***
@@ -35,7 +37,7 @@ def binarySearch(A,low,high,key):
         return binarySearch(A,mid+1,high,key)
 
 ```
-
+<br>
 
 普通的搜索算法
 **linear Search**
@@ -68,10 +70,14 @@ T(n)=aT([n/b])+O(n^d)
 - 2.T(n)=O(n^d log(n)) if d == logba 
 - 3.T(n) =O(n^(logba)) if d < logba
 
+<br>
+
 #### 排序中经常会用到divide and conquer的思想。
 
 选择排序是嘴简单的排序算法，类似的还有插入排序与冒泡排序，时间复杂度为O(n^2)
+
 **选择排序代码的两种方法**
+
 ```python
 ##Sorting problem
 #selection sorting 
@@ -92,11 +98,12 @@ def selectionSorting2(a):
     return a
 ```
 
-
+<br>
 
 归并排序是一种效率较高的算法，思想是把一个list分为极小的部分，各个排序之后merge还原成sorted list. 时间复杂的为O(nlog(n))
 
 **Merge Sorting 归并排序**
+
 ```python
 #Divide the problem
 def MergeSorting(a):
@@ -123,11 +130,13 @@ def Merge(B,C):
         D.extend(B)
     return D
 ```
-
+<br>
 
 
 > 以上的几种算法均为comparsion-based algorithms, 需要通过对比数来进行排序。有一种算法叫Count Sort 不需要进行对比，代码如下
+
 **count sorting**
+
 ```python
 #non-comparison based sorting algorithms
 def countSort(A):
@@ -146,15 +155,17 @@ def countSort(A):
     return b
 ```
 
-
+<br>
 
 #### 最后是快速排序*quick sort*, 是一种效率很高的排序方法，不需要占用额外内存，average running time = O(nlog(n)), 最差情况为O(n^2)
+<br>
 
 > quick sorting 也是一种 comparsion-base algorithms 
+
 最简单的代码实现如下
 **Quick Sorting快速排序**
-```python
 
+```python
 '''start of the quick sorting algorithm'''
 ##QuickSorting
 def quickSort(A,l,r):
