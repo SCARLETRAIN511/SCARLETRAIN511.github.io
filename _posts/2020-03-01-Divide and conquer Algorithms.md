@@ -21,7 +21,11 @@ tags:
 
 分治法是把问题分成最小的规模，逐个解决，再合并。最典型的例子是二分搜索法。
 
-***代码***
+#### 代码
+
+<br>
+
+
 **Binary search**
 ```python
 def binarySearch(A,low,high,key):
