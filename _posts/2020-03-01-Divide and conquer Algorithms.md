@@ -12,12 +12,14 @@ tags:
     - 学习笔记
     - 排序
 ---
-
-# Divide and conquer is always referred as '分治法'.
-
 #### Notes from course Data Structure and algorithms from coursera
 
+> Divide and conquer algorithm is very important and always referred as '分治法'.
+
 ##### 这周的算法思想是divide and conquer(分治法)。分治法是把问题分成最小的规模，逐个解决，再合并。二分搜索，归并排序与快速排序都是比较经典的例子。
+
+>下面会把每个基本算法代码写出来，但事实上他们还是能被优化的。
+
 
 <br>
 
