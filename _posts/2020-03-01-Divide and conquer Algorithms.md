@@ -47,6 +47,7 @@ def binarySearch(A,low,high,key):
 **linear Search**
 ```python
 ##linear search
+
 def linearSearch(array1,element):
     found = False
     for i in array1:
@@ -56,9 +57,11 @@ def linearSearch(array1,element):
     return found
 
 #recursive way
+
 def linearSearchRecursion(A,low,high,key):
     #low = lower bound
     #high = higher bound
+
     if high<low:
         return "Not Found"
     if A[low] == key:
@@ -85,6 +88,7 @@ T(n)=aT([n/b])+O(n^d)
 ```python
 ##Sorting problem
 #selection sorting 
+
 def selectionSorting(a):
     for i in range(len(a)):
         minIndex = i
@@ -110,6 +114,7 @@ def selectionSorting2(a):
 
 ```python
 #Divide the problem
+
 def MergeSorting(a):
     n = len(a)
     if n == 1:
@@ -121,6 +126,7 @@ def MergeSorting(a):
     return Aprime
 
 #merge the 2 arrays
+
 def Merge(B,C):
     D = []
     while B and C :
@@ -162,16 +168,17 @@ def countSort(A):
 <br>
 
 #### 最后是快速排序*quick sort*, 是一种效率很高的排序方法，不需要占用额外内存，average running time = O(nlog(n)), 最差情况为O(n^2)
-<br>
 
 > quick sorting 也是一种 comparsion-base algorithms 
 
 最简单的代码实现如下
+
 **Quick Sorting快速排序**
 
 ```python
 '''start of the quick sorting algorithm'''
 ##QuickSorting
+
 def quickSort(A,l,r):
     if l<r:
         m = partition(A,l,r)
@@ -179,6 +186,7 @@ def quickSort(A,l,r):
         quickSort(A,m+1,r)
 
 #partition algorithms
+
 def partition(A,l,r):
     x = A[l]
     j = l
@@ -186,11 +194,14 @@ def partition(A,l,r):
         if A[i]<=x:
             j+=1
             A[j], A[i] = A[i], A[j]
+
             #通过 交换，让j左边的数都比x小，j
+
     A[l], A[j] = A[j], A[l]
     return j
 
 #implement the the quicksort
+
 def quickSortFunc(A):
     quickSort(A,0,len(A)-1)
     return A
