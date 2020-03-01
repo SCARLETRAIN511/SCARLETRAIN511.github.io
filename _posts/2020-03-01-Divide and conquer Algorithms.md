@@ -2,7 +2,7 @@
 layout:     post
 title:      分治算法与排序笔记
 subtitle:   coursera课程 第三周笔记
-date:       2020-02-20
+date:       2020-03-01
 author:     JiaxuanTang
 header-img: img/post-bg3.jpg
 catalog: true
